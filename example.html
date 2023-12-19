@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="arrayInput">Insert Array elements (comma-separated)</label>
+    <input type="text" id="arrayInput" />
+    <button onclick="sortArray()">Sort</button>
+    <br /><br />
+    <label>Sorted Array : </label>
+    <p id="result"></p>
+
+    <script>
+      function sortArray() {
+        let arrEle = document.getElementById("arrayInput").value;
+        let arr = arrEle.split(",").map((item) => Number(item));
+        for(let i = 1;i<arr.length;i++) {
+            
+        }
+        let result = document.getElementById("result");
+        result.innerHTML = arr.join(", ");
+      }
+    </script>
+  </body>
+</html>
